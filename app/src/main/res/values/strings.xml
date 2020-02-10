@@ -1,0 +1,67 @@
+<resources>
+
+    <string name="app_name">ShowHelper</string>
+
+    <string name="txt_imdb">IMDb</string>
+    <string name="txt_overview">Summary:</string>
+    <string name="txt_zero">0.0</string>
+    <string name="txt_search">Search</string>
+
+    <string name="txt_noConnection">No internet connection</string>
+    <string name="txt_noContents">No Shows</string>
+    <string name="txt_noRecommends">Add shows to Collection to get recommends</string>
+    <string name="txt_noData">No Data</string>
+
+
+    <!-- Main -->
+    <string name="settings_filter" translatable="false">filter</string>
+    <string name="settings_filterDefault" translatable="false">released</string>
+
+    <string name="settings_sort" translatable="false">sort</string>
+    <string name="settings_sortDefault" translatable="false">release_date</string>
+    <string name="settings_sortDirection" translatable="false">sortDirection</string>
+    <string name="settings_sortDirectionDefault" translatable="false">ASC</string>
+
+    <string name="settings_tmdbURL" translatable="false">tmdb_url</string>
+    <string name="settings_tmdbURLDefault" translatable="false">https://api.themoviedb.org/3/discover/movie</string>
+
+    <string name="tab_toWatch">To watch</string>
+    <string name="tab_all">Collection</string>
+    <string name="tab_discover">Discover</string>
+
+
+
+    <!-- Details -->
+    <string name="description_thumbnail">Thumbnail</string>
+    <string name="description_poster">Poster</string>
+
+    <string name="btn_add">Add</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_setWatched">Set Watched</string>
+    <string name="btn_setUnwatched">Set Not Watched</string>
+
+    <string name="sort_options">Sorting Options</string>
+    <string name="sort_asc">Ascending</string>
+    <string name="sort_desc">Descending</string>
+    <string name="sort_date">By Date</string>
+    <string name="sort_rating">By Rating</string>
+
+    <string name="filter_options">Filter Options</string>
+    <string name="filter_popular">Popular</string>
+    <string name="filter_topRated">Top Rated</string>
+    <string name="filter_recommend">Recommends</string>
+    <string name="filter_released">Released</string>
+    <string name="filter_notreleased">Not Released</string>
+
+    <string name="search_hint">Enter keyword here</string>
+
+
+
+
+    <!-- Calendar -->
+    <string name="calendar_today">Today</string>
+    <string name="calendar_day">Daily View</string>
+    <string name="calendar_threeDay">Three-Day View</string>
+    <string name="calendar_week">Weekly View</string>
+
+</resources>

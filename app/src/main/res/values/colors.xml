@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0069c0</color>
+    <color name="colorAccent">#2196F3</color>
+
+
+    <color name="colorShowTitle">#000000</color>
+    <color name="colorShowDetails">#3f4243</color>
+
+    <color name="colorBtnAdd">#4CAF50</color>
+    <color name="colorBtnRemove">#FF5722</color>
+    <color name="colorBtnWatched">#FF9800</color>
+    <color name="colorBtnUnwatched">#2196F3</color>
+    <color name="colorBtnIMDB">#FDD835</color>
+
+    <color name="colorBackgroundDivider">#E0E0E0</color>
+
+</resources>

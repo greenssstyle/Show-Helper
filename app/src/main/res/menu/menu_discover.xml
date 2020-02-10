@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_filter"
+        android:icon="@drawable/ic_more_vert_white"
+        android:title="@string/filter_options"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/menu_show_popular"
+                android:title="@string/filter_popular" />
+
+            <item
+                android:id="@+id/menu_show_toprated"
+                android:title="@string/filter_topRated" />
+
+            <item
+                android:id="@+id/menu_show_recommended"
+                android:title="@string/filter_recommend" />
+
+        </menu>
+    </item>
+
+</menu>

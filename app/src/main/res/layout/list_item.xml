@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp"
+    android:background="#eeeeee">
+
+
+    <ImageView
+        android:id="@+id/item_img_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/tmp_thumbnail"
+        android:contentDescription="@string/description_thumbnail"
+        android:scaleType="centerInside" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorShowTitle"
+            android:textSize="16sp"
+            tools:text="Show name" />
+
+        <TextView
+            android:id="@+id/item_tv_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorShowDetails"
+            android:textSize="12sp"
+            android:text="@string/txt_zero" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_tv_release"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorShowDetails"
+        android:textSize="12sp"
+        tools:text="2017-09-05" />
+</LinearLayout>

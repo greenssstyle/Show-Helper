@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    tools:context="com.example.thinkpad.showhelper.Fragments.Details">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/details_img_poster"
+            android:contentDescription="@string/description_poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/tmp_poster"/>
+
+
+        <TextView
+            android:id="@+id/details_tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+
+        <ProgressBar
+            android:id="@+id/details_probar_loading"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@android:color/white"
+            android:padding="4dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/details_btn_addremove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="@color/color_btn_addremove"
+                android:textOff="@string/btn_add"
+                android:textOn="@string/btn_remove"
+                android:textSize="14sp" />
+
+            <ToggleButton
+                android:id="@+id/details_btn_watch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="2dp"
+                android:backgroundTint="@color/color_btn_watchedunwatched"
+                android:textOff="@string/btn_setWatched"
+                android:textOn="@string/btn_setUnwatched"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/details_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textSize="24sp"
+                android:textColor="@color/colorShowTitle"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/details_tv_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@id/details_tv_title"
+                android:layout_alignStart="@id/details_tv_title"
+                android:textSize="16sp"
+                android:textColor="@color/colorShowDetails"
+                tools:text="04 Apr 1996" />
+
+            <TextView
+                android:id="@+id/details_tv_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_tv_release"
+                android:layout_alignStart="@id/details_tv_title"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:background="@android:color/holo_green_dark"
+                tools:text="10"/>
+
+            <TextView
+                android:id="@+id/details_tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_tv_release"
+                android:layout_toEndOf="@id/details_tv_vote"
+                android:layout_marginStart="16dp"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorShowDetails"
+                tools:text="200 votes"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@android:color/white"
+            android:padding="@dimen/padding_text">
+
+            <TextView
+                android:id="@+id/details_tv_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textSize="24sp"
+                android:textColor="@color/colorShowTitle"
+                android:text="@string/txt_overview"/>
+
+            <TextView
+                android:id="@+id/details_tv_overview"
+                android:textAlignment="textStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/details_tv_summary"
+                android:textSize="16sp"
+                android:textColor="@color/colorShowDetails"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/details_btn_imdbURL"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="@color/colorBtnIMDB"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="2dp"
+            android:text="@string/txt_imdb"/>
+    </LinearLayout>
+</ScrollView>
